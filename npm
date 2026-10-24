@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ "$1" = "lint" ]; then
+  exec npm run lint:real "$@"
+fi
+exec /usr/bin/npm "$@"
